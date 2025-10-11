@@ -24,7 +24,9 @@ Uma **linguagem de programação de alto nível** permite que programadores escr
 - **Nome:** Identificador usado para acessar o valor armazenado.
 - **Tipo:** Define o tipo de dado que a variável pode armazenar (ex: `int`, `double`, `String`).
 
-Exemplo:
+
+**Exemplo:**
+
 ```java
 int idade = 25;
 double altura = 1.75;
@@ -45,8 +47,10 @@ if (idade >= 18) {
 }
 ```
 
+
 Também é possível usar `switch` para múltiplas opções:
-#
+
+```java
 int dia = 2;
 switch (dia) {
     case 1:
@@ -87,7 +91,6 @@ Permite executar um bloco de código várias vezes.
         i++;
     } while (i < 5);
     ```
-
 
 ## Comentários em Java
 
