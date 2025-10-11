@@ -1,71 +1,41 @@
-
 # Linguagem de Programação
 
 ## O que é uma linguagem de alto nível?
-
-Uma **linguagem de programação de alto nível** permite que programadores escrevam instruções de forma mais próxima da linguagem humana, facilitando o desenvolvimento de programas.
-
-> **Exemplos:** Java, Python, C#
-
----
-
-## Comentários em Java
-
-Comentários servem para explicar, documentar ou facilitar a leitura do código. São ignorados pelo compilador.
-
-- **Comentário de linha:** começa com `//` e vai até o final da linha.
-    ```java
-    // Este é um comentário de linha
-    int idade = 20; // Comentário ao lado do código
-    ```
-- **Comentário de bloco:** começa com `/*` e termina com `*/`, podendo ocupar várias linhas.
-    ```java
-    /*
-     * Este é um comentário de bloco
-     * que pode ocupar várias linhas.
-     */
-    System.out.println("Exemplo");
-    ```
-
-> Utilize comentários para tornar seu código mais compreensível!
-
----
-
-## Variáveis
-
-- **Nome:** Identificador usado para acessar o valor armazenado.
-- **Tipo:** Define o tipo de dado que a variável pode armazenar (ex: `int`, `double`, `String`).
-
-**Exemplo:**
-```java
-int idade = 25;
-double altura = 1.75;
-String nome = "Ana";
-```
-
----
+Uma **linguagem de programação de alto nível** permite que programadores escrevam instruções de forma mais próxima da linguagem humana, facilitando o desenvolvimento de programas. Exemplos: Java, Python, C#.
 
 ## Comandos de Entrada e Saída
 
-- **Entrada:** Receber dados do usuário (classe `Scanner` em Java).
+- **Entrada:** Permite receber dados do usuário.
+    - Em Java, usamos a classe `Scanner`:
     ```java
     import java.util.Scanner;
     Scanner sc = new Scanner(System.in);
     int idade = sc.nextInt();
     String nome = sc.nextLine();
     ```
-- **Saída:** Exibir informações na tela.
+- **Saída:** Permite exibir informações na tela.
+    - Em Java:
     ```java
     System.out.println("Olá, mundo!");
     ```
 
----
+## Variáveis
 
-## Estruturas de Controle
+- **Nome:** Identificador usado para acessar o valor armazenado.
+- **Tipo:** Define o tipo de dado que a variável pode armazenar (ex: `int`, `double`, `String`).
+
+Exemplo:
+```java
+int idade = 25;
+double altura = 1.75;
+String nome = "Ana";
+```
+
+## Estruturas
 
 ### Decisão
 
-Permite executar comandos diferentes dependendo de uma condição.
+Permite executar diferentes comandos dependendo de uma condição.
 
 ```java
 if (idade >= 18) {
@@ -76,7 +46,7 @@ if (idade >= 18) {
 ```
 
 Também é possível usar `switch` para múltiplas opções:
-```java
+#
 int dia = 2;
 switch (dia) {
     case 1:
@@ -90,8 +60,6 @@ switch (dia) {
         System.out.println("Dia inválido");
 }
 ```
-
----
 
 ### Repetição
 
@@ -119,3 +87,24 @@ Permite executar um bloco de código várias vezes.
         i++;
     } while (i < 5);
     ```
+
+
+## Comentários em Java
+
+Comentários são trechos do código ignorados pelo compilador, usados para explicar, documentar ou facilitar a leitura do programa. Existem dois tipos principais:
+
+- **Comentário de linha:** começa com `//` e vai até o final da linha.
+    ```java
+    // Este é um comentário de linha
+    int idade = 20; // Comentário ao lado do código
+    ```
+- **Comentário de bloco:** começa com `/*` e termina com `*/`, podendo ocupar várias linhas.
+    ```java
+    /*
+     * Este é um comentário de bloco
+     * que pode ocupar várias linhas.
+     */
+    System.out.println("Exemplo");
+    ```
+
+Utilize comentários para tornar seu código mais compreensível para você e para outras pessoas!
